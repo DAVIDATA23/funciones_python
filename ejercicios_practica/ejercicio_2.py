@@ -8,9 +8,17 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios con funciones
-
 def promedio(numeros):
-    print("Funcion promedio")
+    if len(numeros)>0:
+        sumatoria_numeros=sum(numeros)
+        cantidad_numeros=len(numeros)
+        promedio=sumatoria_numeros/cantidad_numeros
+        print(f"prmedio {promedio}")
+        return promedio
+    else: 
+        print("es una lista vacia ")
+
+    
     resultado = 0
     # La función promedio recibe como parámetro una
     # lista de números. Con ella calcule el promedio como:
@@ -33,7 +41,7 @@ def promedio(numeros):
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    numeros = [2, 4, 6, 8, 10, 12]
+    numeros = [2,4,6,8,10,12,16,18]
 
     # Alumno: Complete la función "promedio"
 
